@@ -30,7 +30,7 @@ var stoneGame = function (piles) {
             } else {
                 dp[i][j].fir = right;
                 dp[i][j].sec = dp[i][j - 1].fir;
-            }
+            }ds
         }
     }
     return dp[1][piles.length].fir-dp[1][piles.length].sec>=0

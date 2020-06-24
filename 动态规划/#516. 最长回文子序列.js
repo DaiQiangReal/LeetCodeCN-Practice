@@ -21,6 +21,7 @@ var longestPalindromeSubseq = function(s) {
             dp[i][j]=Math.max(dp[i+1][j],dp[i][j-1]);
         }
     } 
-    return dp[1][s.length]
+    return dp[1][s.length];
+    import
 };
 console.log(longestPalindromeSubseq('bbbab'));
