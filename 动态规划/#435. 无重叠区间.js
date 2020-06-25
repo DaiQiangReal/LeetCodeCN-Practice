@@ -16,4 +16,4 @@ var eraseOverlapIntervals = function(intervals) {
     return originLen-intervals.length;
     
 };
-console.log(eraseOverlapIntervals([  ]));
+console.log(eraseOverlapIntervals([]));
