@@ -17,5 +17,17 @@ var maxProfit = function(prices) {
         dp[i][1]=Math.max(dp[i-1][1],dp[i-1][0]-prices[i]);
     }
     return dp[prices.length-1][0];
+
+    //better
+    // var maxProfit = function(prices) {
+    //     if(prices.length===0)
+    //         return 0;
+    //     let dp0=0,dp1=-prices[0];
+    //         for(let i=0;i<prices.length;i++){
+    //             dp0=Math.max(dp0,dp1+prices[i]);
+    //             dp1=Math.max(dp1,dp0-prices[i]);
+    //         }
+    //         return dp0;
+    // };
 };
 console.log(maxProfit([7,1,5,3,6,4]));
