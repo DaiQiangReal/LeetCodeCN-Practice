@@ -24,8 +24,9 @@ var maxProfit = function(prices) {
     //         return 0;
     //     let dp0=0,dp1=-prices[0];
     //         for(let i=0;i<prices.length;i++){
+    //             let temp=dp0;
     //             dp0=Math.max(dp0,dp1+prices[i]);
-    //             dp1=Math.max(dp1,dp0-prices[i]);
+    //             dp1=Math.max(dp1,temp-prices[i]);
     //         }
     //         return dp0;
     // };
