@@ -8,7 +8,7 @@ var permute = function (nums) {
     let temp=[];
     function dfs() {
         if(temp.length===nums.length){
-            result.push(JSON.parse(JSON.stringify(temp)));
+            result.push([...temp]);
             return;
         }
         for (let i = 0; i < nums.length; i++) {
