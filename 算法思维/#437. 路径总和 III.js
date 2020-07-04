@@ -42,7 +42,7 @@ var pathSum = function(root, sum) {
             map.set(pathSum,1);
         res += dfs(node.left, pathSum);
         res += dfs(node.right, pathSum);
-        map[pathSum] --;
+        map.set(pathSum,map.get(pathSum)-1);
         return res;
     }
 };
