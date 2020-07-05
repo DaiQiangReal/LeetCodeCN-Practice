@@ -14,7 +14,6 @@ var deleteDuplicates = function(head) {
     if(head===null||head.next===null){
         return  head;
     }
-    let originHead=head;
     let slow=head;
     let fast=head.next;
     while(fast!==null){
@@ -25,5 +24,5 @@ var deleteDuplicates = function(head) {
         fast=fast.next;
     }
     slow.next=null;
-    return originHead;
+    return head;
 };
